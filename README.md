@@ -15,3 +15,7 @@
 
 ## BUILD THE PROJECT
 - docker compose up -d 
+
+## API SPECS AND DOCUMENTATION 
+this project has generate and publish api docs with swagger UI, you can access swagger ui at:
+http://localhost:4000/api-docs/ 
