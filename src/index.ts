@@ -24,7 +24,6 @@ app.use(booksRouter)
 
 // Serve Swagger documentation
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
-
 mongoose.connect(process.env.MONGODB_URI || "mongodb://test:logique123@localhost:27017", {
     dbName: 'logique',
 })

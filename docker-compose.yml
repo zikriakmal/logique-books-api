@@ -5,13 +5,12 @@ services:
     build: .
     ports:
       - "4000:4000"
-    environment:
-      - PORT=4000
-      - MONGODB_URI=mongodb://mongodb:27017
+    env_file: 
+      - .env
     depends_on:
       - mongodb
 
-  logique-mongodb:
+  mongodb:
     image: mongo:4.2.3-bionic
     container_name: my-mongodb
     ports:
